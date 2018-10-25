@@ -1,0 +1,200 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6943,        192]
+NotebookOptionsPosition[      6336,        167]
+NotebookOutlinePosition[      6689,        183]
+CellTagsIndexPosition[      6646,        180]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SimIll", "[", 
+   RowBox[{"x_", ",", "y_", ",", "r_", ",", "\[Phi]_", ",", "\[Theta]_"}], 
+   "]"}], " ", "=", " ", 
+  RowBox[{
+   RowBox[{"1", "/", "2"}], " ", "*", 
+   RowBox[{"(", 
+    RowBox[{"Cos", "[", 
+     RowBox[{"2", "*", "Pi", "*", "r", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"x", "*", 
+         RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "+", 
+        RowBox[{"y", "*", 
+         RowBox[{"Sin", "[", "\[Theta]", "]"}], 
+         RowBox[{"\[AliasDelimiter]", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"+", "\[Phi]"}], ")"}], "]"}], "+", "1"}], 
+           ")"}]}]}]}]}]}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7455933828431597`*^9, 3.745593474954661*^9}, {
+  3.74559352433491*^9, 3.745593579884344*^9}, {3.7455938900906057`*^9, 
+  3.74559391324404*^9}, {3.745593945653781*^9, 3.7455939470988913`*^9}, {
+  3.745594111296918*^9, 3.745594114933099*^9}, {3.745594206284424*^9, 
+  3.7455942081620083`*^9}, {3.745597682837391*^9, 3.745597684676317*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"cos", "(", 
+      RowBox[{"2", " ", "\[Pi]", " ", "r", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"x", " ", 
+          RowBox[{"cos", "(", "\[Theta]", ")"}]}], "+", 
+         RowBox[{"y", " ", 
+          RowBox[{"sin", "(", "\[Theta]", ")"}]}], "+", "\[Phi]"}], ")"}]}], 
+      ")"}], "+", "1"}], ")"}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.7455935692763653`*^9, 3.7455935801529503`*^9}, 
+   3.745593913650729*^9, 3.745593948682645*^9, 3.745594120635901*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"DensityPlot", "[", 
+    RowBox[{
+     RowBox[{"SimIll", "[", 
+      RowBox[{"x", ",", "y", ",", "r", ",", "\[Phi]", ",", "\[Theta]"}], 
+      "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], "\[IndentingNewLine]", 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Phi]", ",", "0", ",", 
+     RowBox[{"4", "*", "Pi"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Theta]", ",", "0", ",", 
+     RowBox[{"2", "*", "Pi"}]}], "}"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7455936826010637`*^9, 3.745593759275017*^9}, {
+  3.745593796070394*^9, 3.745593821516448*^9}, {3.74559392198866*^9, 
+  3.745594118115613*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   FormBox[
+    StyleBox[
+     DynamicModuleBox[{$CellContext`r$$ = 2.2, $CellContext`\[Theta]$$ = 
+      2.626371458401067, $CellContext`\[Phi]$$ = 6.232919824722149, 
+      Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+      Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ =
+       1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+        Hold[$CellContext`r$$], 0, 10}, {
+        Hold[$CellContext`\[Phi]$$], 0, 4 Pi}, {
+        Hold[$CellContext`\[Theta]$$], 0, 2 Pi}}, Typeset`size$$ = {
+      360., {174., 179.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+      Typeset`skipInitDone$$ = True, $CellContext`r$8002$$ = 
+      0, $CellContext`\[Phi]$8003$$ = 0, $CellContext`\[Theta]$8004$$ = 0}, 
+      DynamicBox[Manipulate`ManipulateBoxes[
+       1, TraditionalForm, 
+        "Variables" :> {$CellContext`r$$ = 0, $CellContext`\[Theta]$$ = 
+          0, $CellContext`\[Phi]$$ = 0}, "ControllerVariables" :> {
+          Hold[$CellContext`r$$, $CellContext`r$8002$$, 0], 
+          Hold[$CellContext`\[Phi]$$, $CellContext`\[Phi]$8003$$, 0], 
+          Hold[$CellContext`\[Theta]$$, $CellContext`\[Theta]$8004$$, 0]}, 
+        "OtherVariables" :> {
+         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+          Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+          Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> DensityPlot[
+          $CellContext`SimIll[$CellContext`x, $CellContext`y, \
+$CellContext`r$$, $CellContext`\[Phi]$$, $CellContext`\[Theta]$$], \
+{$CellContext`x, -1, 1}, {$CellContext`y, -1, 1}], 
+        "Specifications" :> {{$CellContext`r$$, 0, 
+           10}, {$CellContext`\[Phi]$$, 0, 4 Pi}, {$CellContext`\[Theta]$$, 0,
+            2 Pi}}, "Options" :> {}, "DefaultOptions" :> {}],
+       ImageSizeCache->{405., {245., 252.}},
+       SingleEvaluation->True],
+      Deinitialization:>None,
+      DynamicModuleValues:>{},
+      SynchronousInitialization->True,
+      UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+      UnsavedVariables:>{Typeset`initDone$$},
+      UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+     Deployed->True,
+     StripOnInput->False],
+    TraditionalForm],
+   Manipulate`InterpretManipulate[1]], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.745593811060795*^9, 3.7455938219510927`*^9}, {
+  3.745593915558447*^9, 3.745593971140338*^9}, {3.745594069003181*^9, 
+  3.745594122318899*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox["", TraditionalForm]], "Input",
+ CellChangeTimes->{{3.745593365794444*^9, 3.7455933687806997`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.745593370984466*^9, 3.7455933752798*^9}, {
+   3.745593829014222*^9, 3.745593872964201*^9}, 3.745594362535647*^9}],
+
+Cell[BoxData[
+ FormBox["", TraditionalForm]], "Input",
+ CellChangeTimes->{{3.745594359486372*^9, 3.745594359638267*^9}}],
+
+Cell[BoxData[
+ FormBox["", TraditionalForm]], "Input",
+ CellChangeTimes->{{3.745593852080863*^9, 3.74559385292861*^9}}]
+},
+WindowSize->{1030, 756},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1071, 27, 32, "Input"],
+Cell[1654, 51, 603, 16, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2294, 72, 949, 26, 96, "Input"],
+Cell[3246, 100, 2539, 48, 514, "Output"]
+}, Open  ]],
+Cell[5800, 151, 122, 2, 28, "Input"],
+Cell[5925, 155, 162, 2, 32, "Input"],
+Cell[6090, 159, 120, 2, 28, InheritFromParent],
+Cell[6213, 163, 119, 2, 28, InheritFromParent]
+}
+]
+*)
+
